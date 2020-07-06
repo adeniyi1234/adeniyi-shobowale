@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #navBtnHireMe {
     color: black !important;
     font-weight: 500;
@@ -28,4 +29,47 @@
 
 .header_intro > .span3 {
     font-size: 1.5rem;
+=======
+#navBtnHireMe {
+    color: black !important;
+    font-weight: 500;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: none;
+}
+
+
+#navBtnHireMe:hover {
+    background-color: black;
+    border: 1px solid white;
+    color: white !important;
+}
+
+.header_intro {
+    margin-top: 5rem;
+}
+
+.header_intro > .span1 {
+    font-size: 2rem;
+}
+
+.header_intro > .span2 {
+    font-size: 4rem;
+}
+
+
+.header_intro > .span3 {
+    font-size: 1.5rem;
+}
+
+.center {
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+
+>>>>>>> 5d00dbc803ecb441c90a956195065d2ce32e145b
 }
