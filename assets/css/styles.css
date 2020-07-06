@@ -40,3 +40,42 @@
     border-radius: 5px;
 
 }
+
+header .container {
+    border-bottom: 1px solid rgba(56, 55, 55, 0.178);
+}
+
+.project .nav-link.active {
+    color: white !important;
+    background-color: black !important;
+}
+
+.project a {
+    color: black !important;
+}
+
+.card {
+    border: 1px solid rgba(0, 0, 0, .125) !important;
+    border-radius: 10px !important;
+}
+
+.card .card-img, .card-img-top {
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .span2 {
+        font-size: 3rem !important;
+    }
+ }
+
+ @media (max-width: 575.98px) { 
+    .span2 {
+        font-size: 3rem !important;
+    }
+
+    .header_intro {
+        margin-top: 1.5rem;
+    }
+  }

@@ -6,6 +6,7 @@
     <title>Niyi Adebowale</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="https://kit.fontawesome.com/e2f99e2924.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -43,24 +44,105 @@
                             <span class="span2"  >Adeniyi Adebowale</span> <br>
                             <span class="span3" >Web Developer & Product Designer</span> <br>
                         </p>
+                        <div>
+                            <a href="http://" target="_blank" rel="noopener noreferrer"><i class="fab fa-3x fa-facebook-square"></i></a>
+                            <a href="http://" target="_blank" rel="noopener noreferrer"><i class="fab fa-3x fa-linkedin"></i></a>
+                        </div>
                     </div>
                 </div>
 
 
                 <div class="col-lg-5"> 
                     <div class="m-3">
-                        <img src="assets/images/niyi.jpg" width="400" height="450" alt="">
+                        <!-- <img src="assets/images/niyi.jpg" width="400" height="450" alt=""> -->
+                        <img src="assets/images/niyi.jpg" class="img-fluid" alt="Responsive image">
                     </div>
                 </div>
-            </div>   
-            <div>
-                <a href="http://www.facebook.com/" target="_blank">facebook!</a> 
-            </div>       
+            </div>          
         </div>
     </header>
-    <br>
-    <br>
-    <div class="container">
+
+    <main class="mt-5">
+        <div class="container project">
+            <ul class="nav nav-pills mb-3 mx-auto justify-content-center" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <a class="nav-link active" id="pills-all-tab" data-toggle="pill" href="#pills-all" role="tab" aria-controls="pills-all" aria-selected="true">All</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" id="pills-ui/ux-tab" data-toggle="pill" href="#pills-ui/ux" role="tab" aria-controls="pills-ui/ux" aria-selected="false">UI/UX</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" id="pills-website-tab" data-toggle="pill" href="#pills-website" role="tab" aria-controls="pills-website" aria-selected="false">Website</a>
+            </li>
+            </ul>
+            <!-- All Categories -->
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-all" role="tabpanel" aria-labelledby="pills-all-tab">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="card w-100" style="width: 18rem;">
+                                <img src="https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80" class="card-img-top" alt="ui/ux">
+                                <div class="card-body">
+                                  <p class="card-text">
+                                      <span class="text-uppercase text-monospace">UI/UX</span> <br>
+                                      <span class="text-uppercase text-monospace font-weight-bold">project title</span>
+                                      <span style="position: relative; left: 150px;" class="text-uppercase text-monospace font-weight-bold pull-right">2020</span>
+                                  </p>
+                                </div>
+                            </div>                            
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="card w-100" style="width: 18rem;">
+                                <img src="https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80" class="card-img-top" alt="ui/ux">
+                                <div class="card-body">
+                                  <p class="card-text">
+                                      <span class="text-uppercase text-monospace">Website</span> <br>
+                                      <span class="text-uppercase text-monospace font-weight-bold">project title</span>
+                                      <span style="position: relative; left: 150px;" class="text-uppercase text-monospace font-weight-bold pull-right">2020</span>
+                                  </p>
+                                </div>
+                            </div>                            
+                        </div>                        
+                    </div>
+                </div>
+                <!-- UI/UX Category -->
+                <div class="tab-pane fade" id="pills-ui/ux" role="tabpanel" aria-labelledby="pills-ui/ux-tab">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="card w-100" style="width: 18rem;">
+                                <img src="https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80" class="card-img-top" alt="ui/ux">
+                                <div class="card-body">
+                                  <p class="card-text">
+                                      <span class="text-uppercase text-monospace">UI/UX</span> <br>
+                                      <span class="text-uppercase text-monospace font-weight-bold">project title</span>
+                                      <span style="position: relative; left: 150px;" class="text-uppercase text-monospace font-weight-bold pull-right">2020</span>
+                                  </p>
+                                </div>
+                            </div>                            
+                        </div>
+                    </div>                
+                </div>
+                <!-- Website -->
+                <div class="tab-pane fade" id="pills-website" role="tabpanel" aria-labelledby="pills-website-tab">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="card w-100" style="width: 18rem;">
+                                <img src="https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80" class="card-img-top" alt="ui/ux">
+                                <div class="card-body">
+                                  <p class="card-text">
+                                      <span class="text-uppercase text-monospace">Website</span> <br>
+                                      <span class="text-uppercase text-monospace font-weight-bold">project title</span>
+                                      <span style="position: relative; left: 150px;" class="text-uppercase text-monospace font-weight-bold pull-right">2020</span>
+                                  </p>
+                                </div>
+                            </div>                            
+                        </div>
+                    </div>                    
+                </div>
+            </div>            
+        </div>
+    </main>
+    <!-- <div class="container">
         <div class="row">
           <div class="col">
             <img src="assets/images/1.jpg" alt="" width="400" height="450">
@@ -87,7 +169,7 @@
             <img src="assets/images/5.jpg" alt="" width="400" height="450">
           </div>
         </div>
-      </div> 
+      </div>  -->
       <br>
       <br>
       <div class="container">
@@ -102,6 +184,7 @@
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>    
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>  
+    <script src="assets/js/lib/mdb.min.js"></script>  
 </body>
 </html>
