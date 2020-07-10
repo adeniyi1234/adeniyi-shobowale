@@ -78,4 +78,7 @@ header .container {
     .header_intro {
         margin-top: 1.5rem;
     }
-  }
+
+  #h1,h3 {
+      text-transform: uppercase;
+}
