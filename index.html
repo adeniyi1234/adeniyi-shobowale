@@ -6,6 +6,7 @@
     <title>Adeniyi Shobowale</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="https://kit.fontawesome.com/e2f99e2924.js" crossorigin="anonymous"></script>
 </head>
 <body><header>
     <div class="container">
@@ -16,21 +17,48 @@
             </button>
         
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active mr-3">
-                <a class="nav-link" href="#">Work <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item mr-3">
-                <a class="nav-link" href="#">About Me</a>
-                </li>
-                <li class="nav-item mr-3">
-                <a class="nav-link" href="#">Blog</a>
-                </li>
-                <li class="nav-item mr-3">
-                <a class="nav-link" href="#">Contact</a>
-                </li>                                        
-            </ul>
-            <button id='navBtnHireMe' class="btn btn-light pl-4 pr-4 my-2 my-sm-0">Hire Me</button>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active mr-3">
+                    <a class="nav-link" href="#">Work <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item mr-3">
+                    <a class="nav-link" href="#">About Me</a>
+                    </li>
+                    <li class="nav-item mr-3">
+                    <a class="nav-link" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item mr-3">
+                    <a class="nav-link" href="#">Contact</a>
+                    </li>                                        
+                </ul>
+                <button id='btnRound' type="button" class="btn hireMeOne btn-light pl-4 pr-4 my-2 my-sm-0" data-toggle="modal" data-target="#hire_me">Hire Me</button>
+                <!-- Modal -->
+                <div class="modal fade" id="hire_me" tabindex="-1" role="dialog" aria-labelledby="hire_me" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">LET'S TALK</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero dolore doloribus iure neque recusandae! Iusto quam doloremque perspiciatis voluptates quia eaque, cupiditate, vitae distinctio aperiam aliquam rem aut accusamus libero.
+                                </div>
+                                <div class="col-sm-6">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae error, fugit beatae eveniet illum ipsam est eligendi, quae necessitatibus vel, et tempore? Ullam reprehenderit ut ipsa id corporis sed voluptate?
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>                
             </div>
         </nav>  
         <div class="row">
@@ -41,7 +69,7 @@
                         <span class="span2"  >Adeniyi Shobowale</span> <br>
                         <span class="span3" >Web Developer & Product Designer</span> <br>
                     </p>
-                    <div>
+                    <div id="social_media_links">
                         <a href="http://" target="_blank" rel="noopener noreferrer"><i class="fab fa-3x fa-facebook-square"></i></a>
                         <a href="http://" target="_blank" rel="noopener noreferrer"><i class="fab fa-3x fa-linkedin"></i></a>
                         <a href="http://" target="_blank" rel="noopener noreferrer"><i class="fab fa-3x fa-twitter"></i></a>
@@ -50,9 +78,9 @@
                     </div> 
                     <br>
                     
-                    <div>
-                        <button id='navBtnHireMe' class="btn btn-light pl-4 pr-4 my-2 my-sm-0">HIRE ME</button>
-                        <button id='navBtnHireMe' class="btn btn-dark pl-4 pr-4 my-2 my-sm-0">SEE MY RESUME</button>
+                    <div class="headerBtn">
+                        <button id='btnRound' class="btn btn-dark pl-4 pr-4 my-2 my-sm-0">HIRE ME</button>
+                        <button id='btnRound' class="btn btn-light pl-4 pr-4 my-2 my-sm-0">SEE MY RESUME</button>
                     </div>
                 </div>
             </div>
@@ -338,95 +366,103 @@
             </div>
         </div>       
     </div>
+    <div class="container mb-5">
+      <div class="center">
+        <button id='btnRound' class="btn btn-light hireMeOne pl-4 pr-4 my-2 my-sm-0">load more work</button>
+      </div>
+    </div>
+    <div class="container mb-5">
+        <div class="row mt-5">
+            <div class="col-lg-6">
+                <div class="m-3">
+                    <!-- <img src="assets/images/niyi.jpg" width="4800" height="450" alt=""> -->
+                    <img src="assets/images/1.jpg" class="img-fluid" alt="Responsive image">
+                </div>
+            </div>
+
+            <div class="col-lg-6"> 
+                <div class="m-3 p-3">
+                    <h2 class="h2 font-weight-bold text-uppercase">about me</h2>
+                    <h1 id="whoAmI"> who am i</h1>
+                    <p class='text-justify'>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed maiores necessitatibus nostrum iusto illo alias. 
+                        Ipsa nam culpa quos ab error sequi, a labore possimus explicabo ut dignissimos incidunt harum.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim voluptatem soluta, dolorum sit aperiam suscipit quibusdam nesciunt ipsa architecto,
+                        deleniti beatae quasi maiores totam accusamus unde a consectetur quia nulla.
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem harum commodi nesciunt ut unde quisquam voluptate iure a magnam. 
+                        Temporibus unde fugiat quo reprehenderit porro facilis nulla hic, officia voluptate?
+                    </p>
+                </div>
+                <div class="">
+                    <button id='navBtnHireMe' class="btn btn-light pl-4 pr-4 my-2 my-sm-0">load more work</button>
+                    <button id='navBtnHireMe' class="btn btn-light pl-4 pr-4 my-2 my-sm-0">load more work</button>
+                </div>
+
+            </div>
+        </div>          
+    </div>
+    <div class="testimony">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem fugit nemo iure quia, voluptates minus nulla corporis ad tempore, ipsa, modi soluta doloremque fuga sit. Esse illum nemo vitae assumenda? Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident labore ratione obcaecati, magnam libero minus ipsam corrupti corporis dolores impedit! Natus velit repudiandae vel odit eaque nemo saepe reprehenderit libero.
+        </p>       
+    </div>
+    <div class="avatar-image">
+        <img src="assets/images/avatar.png" class="avatar mx-auto d-block" alt="">
+    </div>
+    <div class="container">
+        
+        <div class="row">
+        <div class="col-sm-4">
+            <div class="card w-100" style="width: 18rem;">
+                <img src="https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80" class="card-img-top" alt="ui/ux">
+                <div>
+                    <h2>gig the best app in 2020</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum corporis tenetur dolore porro temporibus quas quae? 
+                            Vero ducimus optio molestiae accusantium esse. Aliquam optio est, eveniet ipsa nemo totam laboriosam!
+                    </p><br>
+                    
+                    <button id='navBtnHireMe' class="btn btn-light pl-4 pr-4 my-2 my-sm-0">read more</button>
+
+                </div>
+            </div>    
+            
+        </div>
+        <div class="col-sm-4">
+            <div class="card w-100" style="width: 18rem;">
+                <img src="https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80" class="card-img-top" alt="ui/ux">
+                <div>
+                    <h2>gig the best app in 2020</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum corporis tenetur dolore porro temporibus quas quae? 
+                            Vero ducimus optio molestiae accusantium esse. Aliquam optio est, eveniet ipsa nemo totam laboriosam!
+                    </p><br>
+                    
+                <button id='navBtnHireMe' class="btn btn-dark pl-4 pr-4 my-2 my-sm-0">read more</button>
+                </div>
+            </div>    
+            
+        </div>
+        <div class="col-sm-4">
+            <div class="card w-100" style="width: 18rem;">
+                <img src="https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80" class="card-img-top" alt="ui/ux">
+                <div>
+                    <h2>gig the best app in 2020</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum corporis tenetur dolore porro temporibus quas quae? 
+                            Vero ducimus optio molestiae accusantium esse. Aliquam optio est, eveniet ipsa nemo totam laboriosam!
+                    </p><br>
+                    
+                <button id='navBtnHireMe' class="btn btn-light pl-4 pr-4 my-2 my-sm-0">read more</button>
+                </div>
+            </div>    
+            
+        </div>
+
+    </div>     
 </main>
 
-<div class="container">
-      <div class="center">
-        <button id='navBtnHireMe' class="btn btn-light pl-4 pr-4 my-2 my-sm-0">load more work</button>
-      </div>
-</div>
-  <br>
 
-  <div class="row">
-    <div class="col-lg-6">
-        <div class="m-3">
-              <!-- <img src="assets/images/niyi.jpg" width="4800" height="450" alt=""> -->
-              <img src="assets/images/1.jpg" class="img-fluid" alt="Responsive image">
-        </div>
-    </div>
 
-    <div class="col-lg-6"> 
-        <div class="m-3">
-            <h3>about me</h3>
-            <h1> who am i</h1>
-            <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed maiores necessitatibus nostrum iusto illo alias. 
-                Ipsa nam culpa quos ab error sequi, a labore possimus explicabo ut dignissimos incidunt harum.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim voluptatem soluta, dolorum sit aperiam suscipit quibusdam nesciunt ipsa architecto,
-                 deleniti beatae quasi maiores totam accusamus unde a consectetur quia nulla.
-                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem harum commodi nesciunt ut unde quisquam voluptate iure a magnam. 
-                 Temporibus unde fugiat quo reprehenderit porro facilis nulla hic, officia voluptate?
-            </p>
-        </div>
-        <div class="">
-            <button id='navBtnHireMe' class="btn btn-light pl-4 pr-4 my-2 my-sm-0">load more work</button>
-            <button id='navBtnHireMe' class="btn btn-light pl-4 pr-4 my-2 my-sm-0">load more work</button>
-        </div>
 
-    </div>
-</div>          
-</div>
-
-<div class="container">
-    <div class="jumbotron">
-      <h1>awesome</h1>
-         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-         <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-    </div>
-    <div class="row">
-       <div class="col-sm-4">
-        <div class="card w-100" style="width: 18rem;">
-            <img src="https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80" class="card-img-top" alt="ui/ux">
-            <div>
-                 <h2>gig the best app in 2020</h2>
-                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum corporis tenetur dolore porro temporibus quas quae? 
-                          Vero ducimus optio molestiae accusantium esse. Aliquam optio est, eveniet ipsa nemo totam laboriosam!
-                  </p><br>
-                  
-                 <button id='navBtnHireMe' class="btn btn-light pl-4 pr-4 my-2 my-sm-0">read more</button>
-
-            </div>
-        </div>    
-           
-      </div>
-      <div class="col-sm-4">
-        <div class="card w-100" style="width: 18rem;">
-            <img src="https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80" class="card-img-top" alt="ui/ux">
-            <div>
-                 <h2>gig the best app in 2020</h2>
-                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum corporis tenetur dolore porro temporibus quas quae? 
-                          Vero ducimus optio molestiae accusantium esse. Aliquam optio est, eveniet ipsa nemo totam laboriosam!
-                  </p><br>
-                  
-            <button id='navBtnHireMe' class="btn btn-dark pl-4 pr-4 my-2 my-sm-0">read more</button>
-            </div>
-        </div>    
-        
-      </div>
-      <div class="col-sm-4">
-        <div class="card w-100" style="width: 18rem;">
-            <img src="https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80" class="card-img-top" alt="ui/ux">
-            <div>
-                 <h2>gig the best app in 2020</h2>
-                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum corporis tenetur dolore porro temporibus quas quae? 
-                          Vero ducimus optio molestiae accusantium esse. Aliquam optio est, eveniet ipsa nemo totam laboriosam!
-                  </p><br>
-                  
-            <button id='navBtnHireMe' class="btn btn-light pl-4 pr-4 my-2 my-sm-0">read more</button>
-            </div>
-        </div>    
-        
-    </div>
+   
     
 <div class="footer">
        <p>   
@@ -438,8 +474,8 @@
                 <a href="http://" target="_blank" rel="noopener noreferrer"><i class="fab fa-1x fa-linkedin"></i></a>
                 <a href="http://" target="_blank" rel="noopener noreferrer"><i class="fab fa-1x fa-instagram-square"></i></a>
             </div> 
-         </div></p>
- </div>
+        </div></p>
+</div>
   
 
 
