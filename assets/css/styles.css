@@ -1,18 +1,16 @@
-body {
-    padding: 100px;
-}
 
-#navBtnHireMe {
-    color: black !important;
+
+#btnRound {
     font-weight: 500;
-    border: 1px solid black;
+    border: 2px solid black;
     border-radius: 20px;
     background-color: none;
 }
 
 
-#navBtnHireMe:hover {
+#btnRound:hover {
     background-color: black;
+    box-shadow: 2px 2px 10px black;
     border: 1px solid white;
     color: white !important;
 }
@@ -35,13 +33,9 @@ body {
 }
 
 .center {
-    margin: 0;
-    position: absolute;
-    left: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 5px;
 
 }
 
@@ -72,6 +66,10 @@ header .container {
     .span2 {
         font-size: 3rem !important;
     }
+    #whoAmI {
+        font-size: 56px !important;
+    
+    }
  }
 
  @media (max-width: 575.98px) { 
@@ -82,6 +80,14 @@ header .container {
     .header_intro {
         margin-top: 1.5rem;
     }
+    #whoAmI {
+        font-size: 56px !important;
+    
+    }
+    .testimony {
+        padding: 2rem 4rem 4rem 4rem !important;
+    }
+    
 
  }
 .footer {
@@ -92,4 +98,49 @@ header .container {
     background-color: red;
     color: white;
     text-align: center;
+}
+
+.headerBtn .btn-dark {
+    background-color: black !important;
+    box-shadow: 2px 2px 10px black;
+
+    color: white !important;
+}
+
+.hireMeOne {
+    background-color: white !important;
+    color: black !important;
+}
+
+.hireMeOne:hover {
+    background-color: black !important;
+    color: white !important;
+}
+
+
+#whoAmI {
+    text-transform: uppercase;
+    color: rgba(138, 136, 136, 0.733);
+    font-size: 96px;
+
+}
+
+#social_media_links>a {
+    color: inherit
+}
+
+.testimony {
+    margin: 5rem 0rem;
+    background-color: rgb(53, 50, 50);
+    color: white;
+    padding: 5rem 8rem;
+}
+
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: relative;
+    top: -135px;
 }
