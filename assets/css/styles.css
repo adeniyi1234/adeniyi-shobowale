@@ -90,6 +90,11 @@ header .container {
     
 
  }
+
+#inline {
+    display: inline-flex;
+}
+
 .footer {
     position: fixed;
     bottom: 0;
@@ -97,9 +102,6 @@ header .container {
     background-color: black;
     color: white;
     list-style: none;
-    margin: 0;
-    padding: 0;
-    display: inline-block;
 }
 
 .headerBtn .btn-dark {
