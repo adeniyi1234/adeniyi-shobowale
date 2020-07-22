@@ -92,11 +92,14 @@ header .container {
  }
 .footer {
     position: fixed;
-    left: 0;
     bottom: 0;
     width: 100%;
     background-color: black;
     color: white;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
 }
 
 .headerBtn .btn-dark {
